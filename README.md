@@ -2,3 +2,4 @@
 - It contains only one level and a boss
 - download the playable game here https://github.com/AuroreAm/GameOverMan/releases/download/1.0.0/GameOverMan.zip
 - The project works with unity2020.3, only the font _PixelEmulator_ is not in the project which can be get from their website here -> https://www.pixelsagas.com/?page_id=2999
+- just gameplay video => https://www.youtube.com/watch?v=RNl_UlK_Fak
