@@ -1,0 +1,1127 @@
+/**************************************************/
+/*                                                */
+/*          Adapta Nokto theme for Unity          */
+/*                                                */
+/*                    by Mauri                    */
+/*                                                */
+/*                                                */
+/**************************************************/
+
+/* Helpful Ressources to get you started, should you choose to customize this theme further. */
+/* https://docs.unity3d.com/Manual/UIE-USS.html */
+/* https://docs.unity3d.com/Manual/UIE-USS-Selectors.html */
+/* https://docs.unity3d.com/Manual/UIE-USS-SupportedProperties.html */
+/* https://docs.unity3d.com/Manual/UIE-USS-PropertyTypes.html */
+/* https://docs.unity3d.com/Manual/UIE-USS-WritingStyleSheets.html */
+
+
+
+/*****************************************/
+/*	Editor Top Toolbar & Button Styling  */
+/*****************************************/
+
+/* Used for the top bar (Play, Pause and other buttons) and bottom bar */
+.AppToolbar {
+    background-color: #adadb5;
+}
+
+/* Tool Handle Position ... */
+.AppToolbarButtonLeft {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+	border-bottom-color: #648cb4;
+}
+.AppToolbarButtonLeft:hover {
+    background-color: #fde99c;
+	color: #2a5d8e;
+}
+.AppToolbarButtonLeft:active {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+/* ... and Rotation */
+.AppToolbarButtonRight {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+	border-bottom-color: #648cb4;
+}
+.AppToolbarButtonRight:hover {
+    background-color: #fde99c;
+	color: #2a5d8e;
+}
+.AppToolbarButtonRight:active {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+/* Grid Snapping and Cloud button */
+.AppCommand {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+	border-bottom-color: #648cb4;
+}
+.AppCommand:hover {
+    background-color: #fde99c;
+}
+.AppCommand:active {
+    background-color: #c1c1c4;
+}
+
+/* Hand Tool and Play button */
+.AppCommandLeft {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+	border-bottom-color: #648cb4;
+}
+.AppCommandLeft:hover {
+    background-color: #fde99c;
+}
+.AppCommandLeft:active {
+	background-color: #c1c1c4;
+}
+/* While in Play mode, the Play button has a different color assigned - here's a fancy red one */
+.AppCommandLeftOn {
+    background-color: #DB4848;
+	border-color: #4B4E58;
+	border-bottom-color: #4B4E58;
+}
+.AppCommandLeftOn:hover {
+    background-color: #FF6363;
+}
+.AppCommandLeftOn:active {
+    background-color: #FF8282;
+}
+
+/* Move Tool, Rotate Tool, ... and Pause button */
+.AppCommandMid {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+	border-bottom-color: #648cb4;
+}
+.AppCommandMid:hover {
+    background-color: #fde99c;
+}
+.AppCommandMid:active {
+    background-color: #c1c1c4;
+}
+.AppCommandMid:checked {
+    background-color: #c1c1c4;
+}
+.AppCommandMid:checked:hover {
+    background-color: #c1c1c4;
+}
+
+/* Available Custom Editor Tools and Step button (the one next to the Pause button) */
+.AppCommandRight {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+	border-bottom-color: #648cb4;
+}
+.AppCommandRight:hover {
+    background-color: #fde99c;
+}
+.AppCommandRight:active {
+    background-color: #c1c1c4;
+}
+
+
+/****************************************************/
+/*	Hierarchy, Scene, ... Toolbar & Button Styling  */
+/****************************************************/
+
+.Toolbar {
+    background-color: #eff3f5;
+	border-color: #8698a8;
+}
+
+.PreToolbar {
+    background-color: #eff3f5;
+}
+
+.ToolbarDropDownLeft:hover {
+	background-color: #fde99c;
+	color: #2a5d8e;
+}
+.ToolbarDropDownLeft:active {
+	background-color: #c1c1c4;
+}
+
+.ToolbarDropDownToggle {
+	background-color: #eff3f5;
+}
+.ToolbarDropDownToggle:hover {
+	background-color: #fde99c;
+	color: #2a5d8e;
+}
+.ToolbarDropDownToggle:active {
+	background-color: #c1c1c4;
+}
+.ToolbarDropDownToggle:checked {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.ToolbarDropDownToggleRight:hover {
+	background-color: #fde99c;
+	color: #2a5d8e;
+}
+.ToolbarDropDownToggleRight:active {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.ToolbarDropDownToggleRight:checked {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+.ToolbarDropDown {
+	background-color: #eff3f5;
+}
+.ToolbarDropDown:hover {
+	background-color: #fde99c;
+	color: #2a5d8e;
+}
+.ToolbarDropDown:checked {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+.ToolbarCreateAddNewDropDown:hover {
+	background-color: #fde99c;
+}
+.ToolbarCreateAddNewDropDown:checked {
+	background-color: #c1c1c4;
+}
+
+.toolbarbutton {
+	background-color: #eff3f5;
+}
+.toolbarbutton:hover {
+	background-color: #fde99c;
+	color: #2a5d8e;
+}
+.toolbarbutton:active {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.toolbarbutton:checked {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.toolbarbutton:checked:active {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+.toolbarbuttonLeft {
+	background-color: #eff3f5;
+}
+.toolbarbuttonLeft:hover {
+	background-color: #fde99c;
+	color: #2a5d8e;
+}
+.toolbarbuttonLeft:active {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.toolbarbuttonLeft:checked {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.toolbarbuttonLeft:checked:active {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+.toolbarbuttonRight {
+	background-color: #eff3f5;
+}
+.toolbarbuttonRight:hover {
+	background-color: #fde99c;
+	color: #2a5d8e;
+}
+.toolbarbuttonRight:active {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.toolbarbuttonRight:checked {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.toolbarbuttonRight:checked:active {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+
+.ToolbarSeachTextFieldPopup {
+	background-color: #f0f3f5;
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+.ToolbarSeachTextFieldPopup:hover {
+	background-color: #fde99c;
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+	color: #2a5d8e;
+}
+.ToolbarSeachTextFieldPopup:focus {
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+.ToolbarSeachTextFieldPopup:focus:hover {
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+.ToolbarSeachTextFieldPopup:focus:active {
+	background-color: #f0f3f5;
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+
+.ToolbarSeachTextField {
+	background-color: #f0f3f5;
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+.ToolbarSeachTextField:hover {
+	background-color: #fde99c;
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+	color: #2a5d8e;
+}
+.ToolbarSeachTextField:focus {
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+.ToolbarSeachTextField:focus:hover {
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+.ToolbarSeachTextField:focus:active {
+	background-color: #fde99c;
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+
+.SearchTextField {
+	background-color: #d2dbe0;
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+.SearchTextField:hover {
+	background-color: #fde99c;
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+	color: #2a5d8e;
+}
+.SearchTextField:focus {
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+.SearchTextField:focus:hover {
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+.SearchTextField:focus:active {
+	background-color: #fde99c;
+	border-color: #8ca0b4;
+	border-top-color: #8ca0b4;
+	border-bottom-color: #8ca0b4;
+}
+
+
+.ToolbarPopupLeft {
+	background-color: #eff3f5;
+}
+.ToolbarPopupLeft:hover {
+	background-color: #f0f3f5;
+	color: #2a5d8e;
+}
+
+.ToolbarPopup {
+	background-color: #eff3f5;
+}
+.ToolbarPopup:hover {
+	background-color: #f0f3f5;
+	color: #2a5d8e;
+}
+
+
+/* Used when searching for Assets */
+.ExposablePopupItem {
+	border-radius: 4px 4px;
+}
+.ExposablePopupItem:hover {
+	background-color: #f0f3f5;
+	border-radius: 4px 4px;
+	color: #2a5d8e;
+}
+.ExposablePopupItem:active {
+	background-color: #c1c1c4;
+	border-radius: 4px 4px;
+	color: #2a5d8e;
+}
+.ExposablePopupItem:checked {
+	background-color: #c1c1c4;
+	border-radius: 4px 4px;
+	color: #2a5d8e;
+}
+
+
+
+/********************************************************/
+/*  Misc Elements Styling (Dropdowns, Buttons, etc...)  */
+/********************************************************/
+
+/* This colors most of the Buttons */
+.Button, .minibutton {
+    background-color: #fde99c; /*f0f3f5*/
+	border-color: #8698a8;
+	border-bottom-color: #adadb5;
+}
+.Button:hover, .minibutton:hover {
+    background-color: #35464F;
+}
+.Button:active, .minibutton:active {
+    background-color: #c1c1c4;
+	border-color: #adadb5;
+	border-bottom-color: #adadb5;
+}
+
+.AC-Button {
+    background-color: #fde99c;
+	border-color: #8698a8;
+	border-bottom-color: #adadb5;
+}
+.AC-Button:hover {
+    background-color: #35464F;
+}
+.AC-Button:active {
+    background-color: #c1c1c4;
+	border-color: #8698a8;
+	border-bottom-color: #adadb5;
+}
+
+
+.PaneOptions:hover {
+	background-color: #fde99c;
+}
+.PaneOptions:active {
+	background-color: #c1c1c4;
+}
+
+.WinBtnMax:hover {
+	background-color: #fde99c;
+}
+.WinBtnMax:active {
+	background-color: #c1c1c4;
+}
+
+.WinBtnClose:hover {
+	background-color: #fde99c;
+}
+.WinBtnClose:active {
+	background-color: #c1c1c4;
+}
+
+.IN-LockButton:hover {
+	background-color: #fde99c;
+}
+.IN-LockButton:active {
+	background-color: #c1c1c4;
+}
+
+.IconButton:hover {
+	background-color: #fde99c;
+}
+.IconButton:active {
+	background-color: #c1c1c4;
+}
+
+.StatusBarIcon:hover {
+	background-color: #fde99c;
+}
+.StatusBarIcon:active {
+	background-color: #c1c1c4;
+}
+
+
+.DropDownButton {
+    background-color: #fde99c;
+	border-color: #8698a8;
+	border-bottom-color: #adadb5;
+}
+.DropDownButton:hover {
+    background-color: #35464F;
+	border-color: #8698a8;
+	border-bottom-color: #adadb5;
+	color: #2a5d8e;
+}
+.DropDownButton:active {
+    background-color: #c1c1c4;
+	border-color: #8698a8;
+	border-bottom-color: #adadb5;
+	color: #2a5d8e;
+}
+
+.HelpBox {
+    background-color: #eff3f5; /*f0f3f5*/
+	border-color: #648cb4;
+	color: #255186;
+}
+
+
+
+/* Top Account, Layers & Layout buttons */
+.DropDown {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+	border-bottom-color: #648cb4;
+}
+.DropDown:hover {
+    background-color: #fde99c;
+	color: #2a5d8e;
+}
+
+.Foldout:active {
+    background-color: #f0f3f5;
+	color: #2a5d8e;
+}
+
+.FoldoutHeader {
+    background-color: #f0f3f5;
+}
+
+
+/* Used for some dropdown menus - like the ones in the Lighting Settings */
+.MiniPullDown {
+    background-color: #d2dbe0;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #255186;
+}
+.MiniPullDown:hover {
+    background-color: #f0f3f5;
+	color: #2a5d8e;
+}
+
+/* Used for some other dropdown menus */
+.MiniPopup {
+    background-color: #d2dbe0;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #255186;
+}
+.MiniPopup:hover {
+    background-color: #f0f3f5;
+	color: #2a5d8e;
+}
+.MiniPopup:focus {
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+}
+.MiniPopup:focus:hover {
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+}
+
+/* Seems to be only used for the Collab dropdown */
+.OffsetDropDown {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+}
+.OffsetDropDown:hover {
+    background-color: #f0f3f5;
+}
+
+/* Tool Handle Position ... */
+.LargeButtonLeft {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+}
+.LargeButtonLeft:hover {
+    background-color: #fde99c;
+}
+.LargeButtonLeft:active {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.LargeButtonLeft:checked {
+    background-color: #c1c1c4;
+	border-color: #648cb4;
+	color: #2a5d8e;
+}
+
+.LargeButtonMid {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+}
+.LargeButtonMid:hover {
+    background-color: #fde99c;
+}
+.LargeButtonMid:active {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.LargeButtonMid:checked {
+    background-color: #c1c1c4;
+	border-color: #648cb4;
+	color: #2a5d8e;
+}
+.LargeButtonRight {
+    background-color: #f0f3f5;
+	border-color: #648cb4;
+}
+.LargeButtonRight:hover {
+    background-color: #fde99c;
+}
+.LargeButtonRight:active {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.LargeButtonRight:checked {
+    background-color: #c1c1c4;
+	border-color: #648cb4;
+	color: #2a5d8e;
+}
+
+.dockarea {
+    background-color: #eff3f5;
+}
+.dockHeader {
+    background-color: #eff3f5;
+	border-color: #76a1da;
+}
+
+.dragtab-first {
+	background-image: none;
+    background-color: #f0f3f5;
+	border-color: transparent;
+}
+.dragtab-first:hover {
+    background-color: #fde99c;
+	color: #2a5d8e;
+}
+.dragtab-first:active {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.dragtab-first:checked {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+.dragtab {
+    background-color: #f0f3f5;
+	border-color: transparent;
+	color: #2a5d8e;
+}
+.dragtab:hover {
+    background-color: #fde99c;
+	color: #2a5d8e;
+}
+.dragtab:active {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.dragtab:focus {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+.dragtab:checked {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+/* Colors everything: Hierarchy, Inspectors, Console, ... */
+.ScrollViewAlt,
+.TabWindowBackground,
+.ProjectBrowserIconAreaBg {
+	background-color: #f0f3f5;
+}
+
+/* Colors most of the text in Windows, Inspectors, etc */
+.BoldLabel {
+	color: #255186;
+}
+.ControlLabel {
+	color: #255186;
+}
+.ControlLabel:focus {
+	color: #2a5d8e;
+}
+
+/* Used for clickable external URL links -- */
+.LinkLabel {
+	color: #007ecc;
+}
+.LinkLabel:hover {
+	color: #00a2ff;
+}
+.About-Thanks-Label {
+	color: #007ecc;
+}
+.About-Thanks-Label:hover {
+	color: #00a2ff;
+}
+
+.ProjectBrowserTopBarBg {
+	background-color: #eff3f5;
+}
+/* Asset file names */
+.ProjectBrowserGridLabel {
+	color: #255186;
+}
+.ProjectBrowserGridLabel:checked {
+	background-color: #6EA197;
+	color: #2a5d8e;
+}
+.ProjectBrowserGridLabel:checked:focus {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+/* Used for the "Auto Generate Lighting On" etc text */
+#ProgressBarText {
+    color: #255186;
+}
+
+/* Used by the wide border in the Hierarchy and its hover effect */
+.WhiteBackground {
+	background-color: #dee2ed;
+}
+
+/* Used by the Build Settings window and likely other windows */
+.hostview {
+	background-color: #f0f3f5;
+}
+.hostview:hover {
+	background-color: #f0f3f5;
+}
+
+.CN-Box {
+	border-color: #4b4e58;
+}
+
+/* Used for highlighting in the hierarchy and other places */
+.TV-Selection {
+    background-color: #c1c1c4; /* 008062 */
+}
+
+.SceneTopBarBg {
+	background-color: #c1c1c4;
+}
+
+
+#BoldTextField {
+    background-color: #d2dbe0;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #255186;
+}
+#BoldTextField:hover {
+    background-color: #f0f3f5;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #2a5d8e;
+}
+
+
+
+
+/*************************************/
+/*  Project Settings Window Styling  */
+/*************************************/
+
+#SettingsHeader {
+	color: #255186;
+}
+
+#SettingsListItem {
+	color: #f1f2f4;
+}
+/* Text color when focused */
+#SettingsListItem:active {
+	color: #255186;
+}
+#SettingsListItem:hover {
+	background-color: #364263;
+	color: #f1f2f4;
+}
+#SettingsListItem:active:hover {
+    background-color: #f1f2f4;
+}
+
+
+/***********************************/
+/*  Build Settings Window Styling  */
+/***********************************/
+
+#PlayerSettingsPlatform {
+	color: #255186;
+}
+
+/* Contains the various build platforms */
+/*#OL-box {
+	background-color: #eff3f5;
+}*/
+
+#CN-EntryBackOdd {
+	background-color: #ffeeee;
+}
+#CN-EntryBackEven {
+	background-color: #f0f3f5;
+}
+
+#CN-EntryBackOdd:hover {
+	color: #2a5d8e;
+}
+#CN-EntryBackOdd:checked {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+#CN-EntryBackEven:hover {
+	color: #2a5d8e;
+}
+#CN-EntryBackEven:checked {
+	background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+.TV-Line {
+	color: #255186;
+}
+.TV-Line:hover {
+	color: #2a5d8e;
+}
+.TV-Line:checked {
+	color: #2a5d8e;
+}
+
+.TV-LineBold {
+	color: #255186;
+}
+.TV-LineBold:hover {
+	color: #2a5d8e;
+}
+.TV-LineBold:inactive {
+	color: #2a5d8e;
+}
+.TV-LineBold:checked {
+	color: #2a5d8e;
+}
+
+
+/********************************************/
+/*  Console Window Styling  - Experimental  */
+/********************************************/
+
+.CN-EntryError {
+	color: #000000;
+}
+.CN-EntryWarn {
+	color: #000000;
+}
+.CN-EntryInfo {
+	
+}
+
+/* --- /!\ Highly Experimental /!\ --- */
+.CN-StatusError {
+    color: #000000;
+}
+.CN-StatusWarn {
+    color: #000000;
+}
+.CN-StatusInfo {
+    
+}
+
+
+
+
+/********************************************/
+/*             Testing Grounds              */
+/********************************************/
+
+PreBackground,
+#IN-Footer {
+	background-image: none;
+    background-color: #adadb5;
+}
+
+#IN-BigTitle {
+    background-color: #eff3f5;
+}
+
+.IN-Title {
+    background-color: #fafaea;
+	border-color: #fafaea;
+	border-bottom-color: #fafaea;
+}
+.IN-Title:hover {
+	background-color: #eff3f5;
+	border-color: #eff3f5;
+	border-bottom-color: #eff3f5;
+}
+.IN-Title:active {
+	background-color: #eff3f5;
+}
+.IN-Title:focus {
+	background-color: #eff3f5;
+}
+
+.IN-TitleText {
+    color: #255186;
+}
+.IN-TitleText:hover {
+	color: #2a5d8e;
+}
+.IN-TitleText:focus {
+	color: #2a5d8e;
+}
+
+.ProjectBrowserBottomBarBg {
+    background-color: #eff3f5;
+}
+
+/*.ObjectPickerResultsGrid {
+	background-color: #eff3f5;
+}*/
+
+
+TextField {
+    background-color: #d2dbe0;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #255186;
+}
+TextField:hover {
+    background-color: #e0e7eb; /*f0f3f5*/
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #2a5d8e;
+}
+TextField:focus {
+	background-color: #e0e7eb;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #2a5d8e;
+}
+TextField:focus:hover {
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #2a5d8e;
+}
+
+ObjectField, ColorField {
+    background-color: #d2dbe0;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #255186;
+}
+ObjectField:hover {
+    background-color: #f0f3f5;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #2a5d8e;
+}
+ObjectField:focus, ColorField:focus {
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #2a5d8e;
+}
+ObjectField:focus:hover, ColorField:focus:hover {
+	border-top-color: #d5d5d7;
+    border-bottom-color: #8698a8;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+	color: #2a5d8e;
+}
+ObjectFieldButton {
+    background-color: #d2dbe0;
+}
+ObjectFieldButton:hover, ColorField:hover {
+    background-color: #fde99c; /*more light: #8698a8*/
+}
+
+ObjectPickerResultsOdd {
+	background-color: #ffeeee;
+}
+ObjectPickerResultsEven {
+	background-color: #f0f3f5;
+}
+ObjectPickerResultsOdd:checked {
+	background-color: #eff3f5;
+}
+ObjectPickerResultsEven:checked {
+	background-color: #eff3f5;
+}
+
+.QualitySettingsDefault:hover {
+	background-color: #fde99c;
+}
+.QualitySettingsDefault:active {
+	background-color: #c1c1c4;
+}
+
+
+VerticalScrollbarThumb, VerticalScrollbarThumb:hover, VerticalScrollbarThumb:active,
+HorizontalScrollbarThumb, HorizontalScrollbarThumb:hover, HorizontalScrollbarThumb:active {
+	background-image: none;
+    background-color: #1CA089;
+	border-top-color: #f0f3f5;
+    border-bottom-color: #f0f3f5;
+    border-left-color: #f0f3f5;
+    border-right-color: #f0f3f5;
+}
+
+VerticalScrollbarDownButton:hover, VerticalScrollbarUpButton:hover,
+HorizontalScrollbarLeftButton:hover, HorizontalScrollbarRightButton:hover {
+	background-color: #fde99c;
+}
+VerticalScrollbarDownButton:active, VerticalScrollbarUpButton:active,
+HorizontalScrollbarLeftButton:active, HorizontalScrollbarRightButton:active {
+	background-color: #c1c1c4;
+}
+
+HorizontalSlider {
+	background-color: #8698a8;
+}
+HorizontalSliderThumb {
+	background-color: #c1c1c4;
+	border-color: #c1c1c4;
+}
+
+.FrameBox {
+	background-color: #fdfdcb;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #d5d5d7;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+}
+.Tab-onlyOne {
+	background-image: none;
+	background-color: #fdfdcb;
+	border-top-color: #d5d5d7;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+}
+
+.RL-Header {
+	background-color: #fdfdcb;
+}
+.RL-Empty-Header {
+	background-color: #fdfdcb;
+}
+.RL-Background {
+	background-color: #fdfdcb;
+	border-top-color: #d5d5d7;
+    border-bottom-color: #d5d5d7;
+    border-left-color: #d5d5d7;
+    border-right-color: #d5d5d7;
+}
+/*.RL-Element:active:checked {
+	background-color: #c1c1c4;
+}*/
+.RL-Footer {
+	background-color: #fdfdcb;
+}
+.RL-FooterButton:hover, .TE-ToolbarDropDown:hover {
+	background-color: #fde99c;
+}
+.RL-FooterButton:active {
+	background-color: #c1c1c4;
+}
+
+#OL-EntryBackOdd {
+	background-color: #ffeeee;
+}
+#OL-EntryBackEven {
+	background-color: #f0f3f5;
+}
+
+#OL-EntryBackOdd:hover {
+	color: #2a5d8e;
+}
+#OL-EntryBackOdd:active {
+	background-color: #eff3f5;
+	color: #2a5d8e;
+}
+#OL-EntryBackEven:hover {
+	color: #2a5d8e;
+}
+#OL-EntryBackEven:active {
+	background-color: #eff3f5;
+	color: #2a5d8e;
+}
+
+.MultiColumnTopBar {
+	background-color: #fdfdcb;
+}
+.MultiColumnHeader, .MultiColumnHeaderCenter {
+	color: #255186;
+}
+
+.SearchModeFilter {
+	background-color: #f0f3f5;
+}
+.SearchModeFilter:hover {
+    background-color: #fde99c;
+	color: #2a5d8e;
+}
+.SearchModeFilter:active, .SearchModeFilter:checked {
+    background-color: #c1c1c4;
+	color: #2a5d8e;
+}
+
+ScriptText {
+    background-color: #adadb5;
+}
+
+/* Used by e.g. the Stats window */
+Window {
+	background-color: #f0f3f5;
+	border-radius: 5px;
+}

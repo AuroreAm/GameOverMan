@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6159c4bbb9aa95949a3a5c2d4ff75142
+timeCreated: 1568142824
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - renderFromPosition: {instanceID: 0}
+  - cubemap: {fileID: 8900000, guid: bc81caea53eff2248b7db995428fea67, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
